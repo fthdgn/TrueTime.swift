@@ -136,3 +136,9 @@ extension TrueTimeClient {
 }
 
 let defaultLogger: LogCallback = { print($0) }
+
+extension Notification.Name {
+    public static let TrueTimeUpdated = Notification.Name("TrueTimeUpdatedNotification")
+}
+
+public let TrueTimeErrorDomain = "com.instacart.TrueTimeErrorDomain"
